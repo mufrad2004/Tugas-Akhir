@@ -1,0 +1,100 @@
+Topologi 1 -> Normal
+Topologi 2 -> HelloMismatch R1 & R2
+Topologi 3 -> DeadMismatch R1 & R9
+Topologi 4 -> NetworkTypeMismatch R3 & R4
+Topologi 5 -> AreaMismatch R4 & R5
+Topologi 6 -> AuthMismatch R5 & R7
+Topologi 7 -> (AuthKeyMismatch R2 & R3) & (AuthMismatch R2 & R3)
+Topologi 8 -> MTUMismatch R1 & R9
+Topologi 9 -> PassiveMismatch R3 & R1
+Topologi 10 -> RedistributeMismatch R2
+Topologi 11 -> RouterIDMismatch R5 & R4
+Topologi 12 -> (HelloMismatch R1 & R2)  & (DeadMismatch R1 & R9)
+Topologi 13 -> (PassiveMismatch R3 & R1) & (AuthMismatch R5 & R7)
+Topologi 14 -> (NetworkTypeMismatch R3 & R4) & (MTUMismatch R1 & R9)
+Topologi 15 -> Normal
+Topologi 16 -> (HelloMismatch R1 & R3) & (HelloMismatch R5 & R4) & (PassiveMismatch R5 & R7)
+Topologi 17 -> Normal
+Topologi 18 -> (MTUMismatch R1 & R9) & (AuthKeyMismatch R2 & R3) & (AuthMismatch R2 & R3)
+Topologi 19 -> (HelloMismatch R3 & R4) & (RedistributeMismatch R5)
+Topologi 20 -> (RedistributeMismatch R3) & (DeadMismatch R1 & R9)
+Topologi 21 -> Normal
+Topologi 22 -> (RedistributeMismatch R5) & (RouterIDMismatch R2 & R3)
+Topologi 23 -> RedistributeMismatch R9
+Topologi 24 -> HelloMismatch R1 & R3
+Topologi 25 -> Normal
+Topologi 26 -> HelloMismatch R2 & R3
+Topologi 27 -> (PassiveMismatch R2 & R3) & (AreaMismatch R2 & R4)
+Topologi 28 -> (RedistributeMismatch R3) & (PassiveMismatch R3 & R4)
+Topologi 29 -> RedistributeMismatch R5
+Topologi 30 -> Normal
+Topologi 31 -> AuthKeyMismatch R3 & R4
+Topologi 32 -> (AreaMismatch R1 & R3) & (PassiveMismatch R1 & R3)
+Topologi 33 -> (AuthKeyMismatch R1 & R2) & (DeadMismatch R1 & R2)
+Topologi 34 -> (DeadMismatch R2 & R3) & (DeadMismatch R4 & R5)
+Topologi 35 -> Normal
+Topologi 36 -> (DeadMismatch R3 & R4) & (PassiveMismatch R1 & R2) & (HelloMismatch R4 & R5)
+Topologi 37 -> (RouterIDMismatch R1 & R2) & (MTUMismatch R4 & R5)
+Topologi 38 -> (RedistributeMismatch R7) & (AuthMismatch R1 & R2)
+Topologi 39 -> (AuthMismatch R2 & R3) & (NetworkTypeMismatch R3 & R4)
+Topologi 40 -> Normal
+Topologi 41 -> DeadMismatch R1 & R9
+Topologi 42 -> AreaMismatch R3 & R4
+Topologi 43 -> RouterIDMismatch R4 & R5
+Topologi 44 -> PassiveMismatch R5 & R7
+Topologi 45 -> Normal
+Topologi 46 -> (AuthMismatch R1 & R2) & (AuthKeyMismatch R1 & R2)
+Topologi 47 -> (NetworkTypeMismatch R3 & R4) & (MTUMismatch R5 & R7)
+Topologi 48 -> (HelloMismatch R1 & R2) & (AreaMismatch R4 & R5)
+Topologi 49 -> RedistributeMismatch R2
+Topologi 50 -> Normal
+Topologi 51 -> (DeadMismatch R1 & R3) & (AuthKeyMismatch R2 & R4)
+Topologi 52 -> (PassiveMismatch R4 & R5) & (HelloMismatch R1 & R2)
+Topologi 53 -> (RouterIDMismatch R1 & R3) & (NetworkTypeMismatch R2 & R4)
+Topologi 54 -> Normal
+Topologi 55 -> (MTUMismatch R1 & R9) & (DeadMismatch R2 & R3)
+Topologi 56 -> (AreaMismatch R4 & R5) & (AuthMismatch R5 & R7) & (AuthKeyMismatch R5 & R7)
+Topologi 57 -> (RedistributeMismatch R3) & (RouterIDMismatch R1 & R2)
+Topologi 58 -> Normal
+Topologi 59 -> HelloMismatch R1 & R2
+Topologi 60 -> Normal
+Topologi 61 -> NetworkTypeMismatch R2 & R4
+Topologi 62 -> RouterIDMismatch R1 & R3
+Topologi 63 -> RedistributeMismatch R7
+Topologi 64 -> Normal
+Topologi 65 -> (AuthMismatch R2 & R3) & (HelloMismatch R3 & R4) & (AuthKeyMismatch R2 & R3)
+Topologi 66 -> (DeadMismatch R1 & R2) & (PassiveMismatch R4 & R5) 
+Topologi 67 -> (AreaMismatch R2 & R4) & (MTUMismatch R1 & R9)
+Topologi 68 -> Normal
+Topologi 69 -> DeadMismatch R3 & R4
+Topologi 70 -> (RouterIDMismatch R4 & R5) & (AuthKeyMismatch R1 & R2)
+Topologi 71 -> (NetworkTypeMismatch R1 & R3) & (PassiveMismatch R5 & R7)
+Topologi 72 -> Normal
+Topologi 73 -> (RedistributeMismatch R9) & (AuthMismatch R2 & R3) & (HelloMismatch R1 & R2)
+Topologi 74 -> (MTUMismatch R4 & R5) & (AreaMismatch R1 & R2)
+Topologi 75 -> (DeadMismatch R1 & R9) & (NetworkTypeMismatch R2 & R3)
+Topologi 76 -> Normal
+Topologi 77 -> HelloMismatch R1 & R3
+Topologi 78 -> (PassiveMismatch R2 & R4) & (AuthMismatch R1 & R2)
+Topologi 79 -> (AreaMismatch R3 & R4) & (RouterIDMismatch R1 & R2)
+Topologi 80 -> Normal
+Topologi 81 -> (AuthMismatch R5 & R7) & (DeadMismatch R1 & R2)
+Topologi 82 -> (HelloMismatch R2 & R3) & (NetworkTypeMismatch R4 & R5)
+Topologi 83 -> MTUMismatch R1 & R9
+Topologi 84 -> Normal
+Topologi 85 -> RedistributeMismatch R5
+Topologi 86 -> (RouterIDMismatch R1 & R2) & (AreaMismatch R4 & R5)
+Topologi 87 -> (RouterIDMismatch R1 & R9) & (PassiveMismatch R3 & R4)
+Topologi 88 -> (AuthKeyMismatch R2 & R3) & (HelloMismatch R1 & R2)
+Topologi 89 -> AuthMismatch R3 & R4
+Topologi 90 -> Normal
+Topologi 91 -> (NetworkTypeMismatch R2 & R4) & (MTUMismatch R1 & R3)
+Topologi 92 -> (RedistributeMismatch R2) & (AreaMismatch R4 & R5)
+Topologi 93 -> (HelloMismatch R1 & R2) & (RouterIDMismatch R3 & R4)
+Topologi 94 -> Normal
+Topologi 95 -> (DeadMismatch R2 & R3) & (AuthMismatch R4 & R5)
+Topologi 96 -> (PassiveMismatch R5 & R7) & (NetworkTypeMismatch R1 & R3)
+Topologi 97 -> (AreaMismatch R2 & R4) & (HelloMismatch R1 & R3)
+Topologi 98 -> Normal
+Topologi 99 -> (MTUMismatch R1 & R9) & (AuthKeyMismatch R2 & R3) & (PassiveMismatch R4 & R5)
+Topologi 100 -> Normal

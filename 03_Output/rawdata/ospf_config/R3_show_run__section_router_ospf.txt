@@ -1,0 +1,9 @@
+router ospf 1
+ router-id 3.3.3.3
+ log-adjacency-changes
+ redistribute eigrp 1 subnets
+ network 3.3.3.3 0.0.0.0 area 0
+ network 192.168.1.2 0.0.0.0 area 0
+ network 192.168.1.10 0.0.0.0 area 0
+ network 192.168.1.13 0.0.0.0 area 0
+R3#

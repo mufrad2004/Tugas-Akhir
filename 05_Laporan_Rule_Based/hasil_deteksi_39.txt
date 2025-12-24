@@ -1,0 +1,19 @@
+=== Mismatch antara R2 dan R3 ===
+=========================================================
+- ospf auth Mismatch :
+	* R2 Fa1/0 : message-digest
+	* R3 Fa1/0 : simple
+=========================================================
++ Solusi :
+	* Samakan nilai ospf auth pada R2 dan R3
+=========================================================
+
+=== Mismatch antara R3 dan R4 ===
+=========================================================
+- Network Type Mismatch :
+	* R3 Fa1/1 : Broadcast
+	* R4 Fa1/0 : Point_to_point
+=========================================================
++ Solusi :
+	* Samakan nilai Network Type pada R3 dan R4
+=========================================================

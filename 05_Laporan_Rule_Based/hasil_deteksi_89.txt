@@ -1,0 +1,9 @@
+=== Mismatch antara R3 dan R4 ===
+=========================================================
+- ospf auth Mismatch :
+	* R3 Fa1/1 : simple
+	* R4 Fa1/0 : message-digest
+=========================================================
++ Solusi :
+	* Samakan nilai ospf auth pada R3 dan R4
+=========================================================

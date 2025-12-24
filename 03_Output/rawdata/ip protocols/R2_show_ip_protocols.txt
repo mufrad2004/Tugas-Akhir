@@ -1,0 +1,45 @@
+Routing Protocol is "ospf 1"
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Router ID 2.2.2.2
+  It is an autonomous system boundary router
+  Redistributing External Routes from,
+    eigrp 1, includes subnets in redistribution
+  Number of areas in this router is 1. 1 normal 0 stub 0 nssa
+  Maximum path: 4
+  Routing for Networks:
+    2.2.2.2 0.0.0.0 area 0
+    192.168.1.6 0.0.0.0 area 0
+    192.168.1.9 0.0.0.0 area 0
+    192.168.1.17 0.0.0.0 area 0
+ Reference bandwidth unit is 100 mbps
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+    9.9.9.9              110      00:19:07
+    7.7.7.7              110      00:19:17
+    3.3.3.3              110      00:19:06
+    4.4.4.4              110      00:20:29
+    1.1.1.1              110      00:19:17
+    5.5.5.5              110      00:19:27
+  Distance: (default is 110)
+
+Routing Protocol is "eigrp 1"
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Default networks flagged in outgoing updates
+  Default networks accepted from incoming updates
+  EIGRP metric weight K1=1, K2=0, K3=1, K4=0, K5=0
+  EIGRP maximum hopcount 100
+  EIGRP maximum metric variance 1
+  Redistributing: ospf 1, eigrp 1
+  EIGRP NSF-aware route hold timer is 240s
+  Automatic network summarization is not in effect
+  Maximum path: 4
+  Routing for Networks:
+    192.168.1.45/32
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+    192.168.1.46          90      00:18:58
+  Distance: internal 90 external 170
+
+R2#

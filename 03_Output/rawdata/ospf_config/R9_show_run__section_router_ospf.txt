@@ -1,0 +1,7 @@
+router ospf 1
+ router-id 9.9.9.9
+ log-adjacency-changes
+ redistribute eigrp 1 subnets
+ network 9.9.9.9 0.0.0.0 area 20
+ network 192.168.1.34 0.0.0.0 area 20
+R9#

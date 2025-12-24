@@ -1,0 +1,45 @@
+interface Loopback0
+ ip address 2.2.2.2 255.255.255.255
+interface FastEthernet0/0
+ ip address 100.100.100.2 255.255.255.0
+ duplex auto
+ speed auto
+ no cdp enable
+interface FastEthernet0/1
+ ip address 192.168.1.6 255.255.255.252
+ ip ospf authentication
+ ip ospf authentication-key cisco123
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+interface FastEthernet1/0
+ no switchport
+ ip address 192.168.1.9 255.255.255.252
+ ip ospf authentication
+ ip ospf authentication-key cisco123
+ ip ospf network point-to-point
+interface FastEthernet1/1
+ no switchport
+ ip address 192.168.1.17 255.255.255.252
+ ip ospf authentication
+ ip ospf authentication-key cisco123
+ ip ospf network point-to-point
+interface FastEthernet1/2
+ no switchport
+ ip address 192.168.1.45 255.255.255.252
+interface FastEthernet1/3
+interface FastEthernet1/4
+interface FastEthernet1/5
+interface FastEthernet1/6
+interface FastEthernet1/7
+interface FastEthernet1/8
+interface FastEthernet1/9
+interface FastEthernet1/10
+interface FastEthernet1/11
+interface FastEthernet1/12
+interface FastEthernet1/13
+interface FastEthernet1/14
+interface FastEthernet1/15
+interface Vlan1
+ no ip address
+R2#

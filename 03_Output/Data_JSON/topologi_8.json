@@ -1,0 +1,711 @@
+{
+  "R1": {
+    "router_id": "1.1.1.1",
+    "interfaces": {
+      "Loopback0": {
+        "ip": "1.1.1.1",
+        "subnet": "255.255.255.255",
+        "MTU": 1514,
+        "ospf": {
+          "ospf auth": "none",
+          "area": 0,
+          "Network Type": "Point_to_point",
+          "passive": false
+        }
+      },
+      "FastEthernet0/0": {
+        "ip": "100.100.100.1",
+        "subnet": "255.255.255.0",
+        "MTU": 1500
+      },
+      "FastEthernet0/1": {
+        "ip": "192.168.1.5",
+        "subnet": "255.255.255.252",
+        "ospf": {
+          "auth_key": {
+            "simple": "cisco123"
+          },
+          "ospf auth": "simple",
+          "area": 0,
+          "Network Type": "Point_to_point",
+          "Hello": 10,
+          "Dead": 40,
+          "passive": false
+        },
+        "MTU": 1500,
+        "neighbor": {
+          "router": "R2",
+          "interface": "FastEthernet 0/1"
+        }
+      },
+      "FastEthernet1/0": {
+        "ip": "192.168.1.1",
+        "subnet": "255.255.255.252",
+        "ospf": {
+          "auth_key": {
+            "simple": "cisco123"
+          },
+          "ospf auth": "simple",
+          "area": 0,
+          "Network Type": "Point_to_point",
+          "Hello": 10,
+          "Dead": 40,
+          "passive": false
+        },
+        "MTU": 1500,
+        "neighbor": {
+          "router": "R3",
+          "interface": "FastEthernet 0/1"
+        }
+      },
+      "FastEthernet2/0": {
+        "ip": "192.168.1.33",
+        "subnet": "255.255.255.252",
+        "ospf": {
+          "auth_key": {
+            "simple": "cisco123"
+          },
+          "ospf auth": "simple",
+          "area": 20,
+          "Network Type": "Point_to_point",
+          "Hello": 10,
+          "Dead": 40,
+          "passive": false
+        },
+        "MTU": 1500,
+        "neighbor": {
+          "router": "R9",
+          "interface": "FastEthernet 0/1"
+        }
+      }
+    },
+    "routing": {
+      "protocol": [
+        "ospf"
+      ],
+      "redistribute": false
+    }
+  },
+  "R2": {
+    "router_id": "2.2.2.2",
+    "interfaces": {
+      "Loopback0": {
+        "ip": "2.2.2.2",
+        "subnet": "255.255.255.255",
+        "MTU": 1514,
+        "ospf": {
+          "ospf auth": "none",
+          "area": 0,
+          "Network Type": "Point_to_point",
+          "passive": false
+        }
+      },
+      "FastEthernet0/0": {
+        "ip": "100.100.100.2",
+        "subnet": "255.255.255.0",
+        "MTU": 1500
+      },
+      "FastEthernet0/1": {
+        "ip": "192.168.1.6",
+        "subnet": "255.255.255.252",
+        "ospf": {
+          "auth_key": {
+            "simple": "cisco123"
+          },
+          "ospf auth": "simple",
+          "area": 0,
+          "Network Type": "Point_to_point",
+          "Hello": 10,
+          "Dead": 40,
+          "passive": false
+        },
+        "MTU": 1500,
+        "neighbor": {
+          "router": "R1",
+          "interface": "FastEthernet 0/1"
+        }
+      },
+      "FastEthernet1/0": {
+        "ip": "192.168.1.9",
+        "subnet": "255.255.255.252",
+        "ospf": {
+          "auth_key": {
+            "simple": "cisco123"
+          },
+          "ospf auth": "simple",
+          "area": 0,
+          "Network Type": "Point_to_point",
+          "Hello": 10,
+          "Dead": 40,
+          "passive": false
+        },
+        "MTU": 1500,
+        "neighbor": {
+          "router": "R3",
+          "interface": "FastEthernet 1/0"
+        }
+      },
+      "FastEthernet1/1": {
+        "ip": "192.168.1.17",
+        "subnet": "255.255.255.252",
+        "ospf": {
+          "auth_key": {
+            "simple": "cisco123"
+          },
+          "ospf auth": "simple",
+          "area": 0,
+          "Network Type": "Point_to_point",
+          "Hello": 10,
+          "Dead": 40,
+          "passive": false
+        },
+        "MTU": 1500,
+        "neighbor": {
+          "router": "R4",
+          "interface": "FastEthernet 0/1"
+        }
+      },
+      "FastEthernet1/2": {
+        "ip": "192.168.1.45",
+        "subnet": "255.255.255.252",
+        "MTU": 1500,
+        "neighbor": {
+          "router": "R11",
+          "interface": "FastEthernet 0/1"
+        }
+      }
+    },
+    "routing": {
+      "protocol": [
+        "ospf",
+        "eigrp"
+      ],
+      "redistribute": true
+    }
+  },
+  "R3": {
+    "router_id": "3.3.3.3",
+    "interfaces": {
+      "Loopback0": {
+        "ip": "3.3.3.3",
+        "subnet": "255.255.255.255",
+        "MTU": 1514,
+        "ospf": {
+          "ospf auth": "none",
+          "area": 0,
+          "Network Type": "Point_to_point",
+          "passive": false
+        }
+      },
+      "FastEthernet0/0": {
+        "ip": "100.100.100.3",
+        "subnet": "255.255.255.0",
+        "MTU": 1500
+      },
+      "FastEthernet0/1": {
+        "ip": "192.168.1.2",
+        "subnet": "255.255.255.252",
+        "ospf": {
+          "auth_key": {
+            "simple": "cisco123"
+          },
+          "ospf auth": "simple",
+          "area": 0,
+          "Network Type": "Point_to_point",
+          "Hello": 10,
+          "Dead": 40,
+          "passive": false
+        },
+        "MTU": 1500,
+        "neighbor": {
+          "router": "R1",
+          "interface": "FastEthernet 1/0"
+        }
+      },
+      "FastEthernet1/0": {
+        "ip": "192.168.1.10",
+        "subnet": "255.255.255.252",
+        "ospf": {
+          "auth_key": {
+            "simple": "cisco123"
+          },
+          "ospf auth": "simple",
+          "area": 0,
+          "Network Type": "Point_to_point",
+          "Hello": 10,
+          "Dead": 40,
+          "passive": false
+        },
+        "MTU": 1500,
+        "neighbor": {
+          "router": "R2",
+          "interface": "FastEthernet 1/0"
+        }
+      },
+      "FastEthernet1/1": {
+        "ip": "192.168.1.13",
+        "subnet": "255.255.255.252",
+        "ospf": {
+          "auth_key": {
+            "simple": "cisco123"
+          },
+          "ospf auth": "simple",
+          "area": 0,
+          "Network Type": "Point_to_point",
+          "Hello": 10,
+          "Dead": 40,
+          "passive": false
+        },
+        "MTU": 1500,
+        "neighbor": {
+          "router": "R4",
+          "interface": "FastEthernet 1/0"
+        }
+      },
+      "FastEthernet1/2": {
+        "ip": "192.168.1.41",
+        "subnet": "255.255.255.252",
+        "MTU": 1500,
+        "neighbor": {
+          "router": "R12",
+          "interface": "FastEthernet 0/1"
+        }
+      }
+    },
+    "routing": {
+      "protocol": [
+        "ospf",
+        "eigrp"
+      ],
+      "redistribute": true
+    }
+  },
+  "R4": {
+    "router_id": "4.4.4.4",
+    "interfaces": {
+      "Loopback0": {
+        "ip": "4.4.4.4",
+        "subnet": "255.255.255.255",
+        "MTU": 1514,
+        "ospf": {
+          "ospf auth": "none",
+          "area": 0,
+          "Network Type": "Point_to_point",
+          "passive": false
+        }
+      },
+      "FastEthernet0/0": {
+        "ip": "100.100.100.4",
+        "subnet": "255.255.255.0",
+        "MTU": 1500
+      },
+      "FastEthernet0/1": {
+        "ip": "192.168.1.18",
+        "subnet": "255.255.255.252",
+        "ospf": {
+          "auth_key": {
+            "simple": "cisco123"
+          },
+          "ospf auth": "simple",
+          "area": 0,
+          "Network Type": "Point_to_point",
+          "Hello": 10,
+          "Dead": 40,
+          "passive": false
+        },
+        "MTU": 1500,
+        "neighbor": {
+          "router": "R2",
+          "interface": "FastEthernet 1/1"
+        }
+      },
+      "FastEthernet1/0": {
+        "ip": "192.168.1.14",
+        "subnet": "255.255.255.252",
+        "ospf": {
+          "auth_key": {
+            "simple": "cisco123"
+          },
+          "ospf auth": "simple",
+          "area": 0,
+          "Network Type": "Point_to_point",
+          "Hello": 10,
+          "Dead": 40,
+          "passive": false
+        },
+        "MTU": 1500,
+        "neighbor": {
+          "router": "R3",
+          "interface": "FastEthernet 1/1"
+        }
+      },
+      "FastEthernet2/0": {
+        "ip": "192.168.1.21",
+        "subnet": "255.255.255.252",
+        "ospf": {
+          "auth_key": {
+            "simple": "cisco123"
+          },
+          "ospf auth": "simple",
+          "area": 0,
+          "Network Type": "Point_to_point",
+          "Hello": 10,
+          "Dead": 40,
+          "passive": false
+        },
+        "MTU": 1500,
+        "neighbor": {
+          "router": "R5",
+          "interface": "FastEthernet 0/1"
+        }
+      }
+    },
+    "routing": {
+      "protocol": [
+        "ospf"
+      ],
+      "redistribute": false
+    }
+  },
+  "R5": {
+    "router_id": "5.5.5.5",
+    "interfaces": {
+      "Loopback0": {
+        "ip": "5.5.5.5",
+        "subnet": "255.255.255.255",
+        "MTU": 1514,
+        "ospf": {
+          "ospf auth": "none",
+          "area": 0,
+          "Network Type": "Point_to_point",
+          "passive": false
+        }
+      },
+      "FastEthernet0/0": {
+        "ip": "100.100.100.5",
+        "subnet": "255.255.255.0",
+        "MTU": 1500
+      },
+      "FastEthernet0/1": {
+        "ip": "192.168.1.22",
+        "subnet": "255.255.255.252",
+        "ospf": {
+          "auth_key": {
+            "simple": "cisco123"
+          },
+          "ospf auth": "simple",
+          "area": 0,
+          "Network Type": "Point_to_point",
+          "Hello": 10,
+          "Dead": 40,
+          "passive": false
+        },
+        "MTU": 1500,
+        "neighbor": {
+          "router": "R4",
+          "interface": "FastEthernet 2/0"
+        }
+      },
+      "FastEthernet1/0": {
+        "ip": "192.168.1.25",
+        "subnet": "255.255.255.252",
+        "MTU": 1500,
+        "neighbor": {
+          "router": "R6",
+          "interface": "FastEthernet 0/1"
+        }
+      },
+      "FastEthernet2/0": {
+        "ip": "192.168.1.29",
+        "subnet": "255.255.255.252",
+        "ospf": {
+          "auth_key": {
+            "simple": "cisco123"
+          },
+          "ospf auth": "simple",
+          "area": 10,
+          "Network Type": "Point_to_point",
+          "Hello": 10,
+          "Dead": 40,
+          "passive": false
+        },
+        "MTU": 1500,
+        "neighbor": {
+          "router": "R7",
+          "interface": "FastEthernet 0/1"
+        }
+      }
+    },
+    "routing": {
+      "protocol": [
+        "ospf",
+        "eigrp"
+      ],
+      "redistribute": true
+    }
+  },
+  "R6": {
+    "router_id": null,
+    "interfaces": {
+      "Loopback0": {
+        "ip": "6.6.6.6",
+        "subnet": "255.255.255.255",
+        "MTU": 1514
+      },
+      "FastEthernet0/0": {
+        "ip": "100.100.100.6",
+        "subnet": "255.255.255.0",
+        "MTU": 1500
+      },
+      "FastEthernet0/1": {
+        "ip": "192.168.1.26",
+        "subnet": "255.255.255.252",
+        "MTU": 1500,
+        "neighbor": {
+          "router": "R5",
+          "interface": "FastEthernet 1/0"
+        }
+      }
+    },
+    "routing": {
+      "protocol": [
+        "eigrp"
+      ],
+      "redistribute": false
+    }
+  },
+  "R7": {
+    "router_id": "7.7.7.7",
+    "interfaces": {
+      "Loopback0": {
+        "ip": "7.7.7.7",
+        "subnet": "255.255.255.255",
+        "MTU": 1514,
+        "ospf": {
+          "ospf auth": "none",
+          "area": 10,
+          "Network Type": "Point_to_point",
+          "passive": false
+        }
+      },
+      "FastEthernet0/0": {
+        "ip": "100.100.100.7",
+        "subnet": "255.255.255.0",
+        "MTU": 1500
+      },
+      "FastEthernet0/1": {
+        "ip": "192.168.1.30",
+        "subnet": "255.255.255.252",
+        "ospf": {
+          "auth_key": {
+            "simple": "cisco123"
+          },
+          "ospf auth": "simple",
+          "area": 10,
+          "Network Type": "Point_to_point",
+          "Hello": 10,
+          "Dead": 40,
+          "passive": false
+        },
+        "MTU": 1500,
+        "neighbor": {
+          "router": "R5",
+          "interface": "FastEthernet 2/0"
+        }
+      },
+      "FastEthernet1/0": {
+        "ip": "192.168.1.49",
+        "subnet": "255.255.255.252",
+        "MTU": 1500,
+        "neighbor": {
+          "router": "R8",
+          "interface": "FastEthernet 0/1"
+        }
+      }
+    },
+    "routing": {
+      "protocol": [
+        "ospf",
+        "eigrp"
+      ],
+      "redistribute": true
+    }
+  },
+  "R8": {
+    "router_id": null,
+    "interfaces": {
+      "Loopback0": {
+        "ip": "8.8.8.8",
+        "subnet": "255.255.255.255",
+        "MTU": 1514
+      },
+      "FastEthernet0/0": {
+        "ip": "100.100.100.8",
+        "subnet": "255.255.255.0",
+        "MTU": 1500
+      },
+      "FastEthernet0/1": {
+        "ip": "192.168.1.50",
+        "subnet": "255.255.255.252",
+        "MTU": 1500,
+        "neighbor": {
+          "router": "R7",
+          "interface": "FastEthernet 1/0"
+        }
+      }
+    },
+    "routing": {
+      "protocol": [
+        "eigrp"
+      ],
+      "redistribute": false
+    }
+  },
+  "R9": {
+    "router_id": "9.9.9.9",
+    "interfaces": {
+      "Loopback0": {
+        "ip": "9.9.9.9",
+        "subnet": "255.255.255.255",
+        "MTU": 1514,
+        "ospf": {
+          "ospf auth": "none",
+          "area": 20,
+          "Network Type": "Point_to_point",
+          "passive": false
+        }
+      },
+      "FastEthernet0/0": {
+        "ip": "100.100.100.9",
+        "subnet": "255.255.255.0",
+        "MTU": 1500
+      },
+      "FastEthernet0/1": {
+        "ip": "192.168.1.34",
+        "subnet": "255.255.255.252",
+        "ospf": {
+          "auth_key": {
+            "simple": "cisco123"
+          },
+          "ospf auth": "simple",
+          "area": 20,
+          "Network Type": "Point_to_point",
+          "Hello": 10,
+          "Dead": 40,
+          "passive": false
+        },
+        "MTU": 68,
+        "neighbor": {
+          "router": "R1",
+          "interface": "FastEthernet 2/0"
+        }
+      },
+      "FastEthernet1/0": {
+        "ip": "192.168.1.37",
+        "subnet": "255.255.255.252",
+        "MTU": 1500,
+        "neighbor": {
+          "router": "R10",
+          "interface": "FastEthernet 0/1"
+        }
+      }
+    },
+    "routing": {
+      "protocol": [
+        "ospf",
+        "eigrp"
+      ],
+      "redistribute": true
+    }
+  },
+  "R10": {
+    "router_id": null,
+    "interfaces": {
+      "Loopback0": {
+        "ip": "10.10.10.10",
+        "subnet": "255.255.255.255",
+        "MTU": 1514
+      },
+      "FastEthernet0/0": {
+        "ip": "100.100.100.10",
+        "subnet": "255.255.255.0",
+        "MTU": 1500
+      },
+      "FastEthernet0/1": {
+        "ip": "192.168.1.38",
+        "subnet": "255.255.255.252",
+        "MTU": 1500,
+        "neighbor": {
+          "router": "R9",
+          "interface": "FastEthernet 1/0"
+        }
+      }
+    },
+    "routing": {
+      "protocol": [
+        "eigrp"
+      ],
+      "redistribute": false
+    }
+  },
+  "R11": {
+    "router_id": null,
+    "interfaces": {
+      "Loopback0": {
+        "ip": "11.11.11.11",
+        "subnet": "255.255.255.255",
+        "MTU": 1514
+      },
+      "FastEthernet0/0": {
+        "ip": "100.100.100.11",
+        "subnet": "255.255.255.0",
+        "MTU": 1500
+      },
+      "FastEthernet0/1": {
+        "ip": "192.168.1.46",
+        "subnet": "255.255.255.252",
+        "MTU": 1500,
+        "neighbor": {
+          "router": "R2",
+          "interface": "FastEthernet 1/2"
+        }
+      }
+    },
+    "routing": {
+      "protocol": [
+        "eigrp"
+      ],
+      "redistribute": false
+    }
+  },
+  "R12": {
+    "router_id": null,
+    "interfaces": {
+      "Loopback0": {
+        "ip": "12.12.12.12",
+        "subnet": "255.255.255.255",
+        "MTU": 1514
+      },
+      "FastEthernet0/0": {
+        "ip": "100.100.100.12",
+        "subnet": "255.255.255.0",
+        "MTU": 1500
+      },
+      "FastEthernet0/1": {
+        "ip": "192.168.1.42",
+        "subnet": "255.255.255.252",
+        "MTU": 1500,
+        "neighbor": {
+          "router": "R3",
+          "interface": "FastEthernet 1/2"
+        }
+      }
+    },
+    "routing": {
+      "protocol": [
+        "eigrp"
+      ],
+      "redistribute": false
+    }
+  }
+}

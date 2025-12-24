@@ -1,0 +1,46 @@
+{
+    "ROLES": {
+        "R1": { 
+            "ospf_area": 0, 
+            "extra": {"FastEthernet2/0": 20} 
+        },
+        "R2": { 
+            "ospf_area": 0, 
+            "extra": {"FastEthernet1/2": "EIGRP"} 
+        },
+        "R3": { 
+            "ospf_area": 0, 
+            "extra": {"FastEthernet1/2": "EIGRP"} 
+        },
+        "R4": { 
+            "ospf_area": 0 
+        },
+        "R5": { 
+            "ospf_area": 0, 
+            "extra": {"FastEthernet1/0": "EIGRP","FastEthernet2/0": 10} 
+        },
+        "R6": { 
+            "eigrp_only": true 
+        },
+        "R7": { 
+            "ospf_area": 10, 
+            "extra": {"FastEthernet1/0": "EIGRP"} 
+        },
+        "R8": { 
+            "eigrp_only": true 
+        },
+        "R9": { 
+            "ospf_area": 20, 
+            "extra": {"FastEthernet1/0": "EIGRP"} 
+        },
+        "R10": { 
+            "eigrp_only": true 
+        },
+        "R11": { 
+            "eigrp_only": true 
+        },
+        "R12": { 
+            "eigrp_only": true 
+        }
+    }
+}

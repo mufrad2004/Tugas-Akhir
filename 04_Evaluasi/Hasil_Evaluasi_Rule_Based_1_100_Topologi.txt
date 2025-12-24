@@ -1,0 +1,37 @@
+=== HASIL EVALUASI RULE-BASED (CSV vs CSV, SKENARIO TOPOLOGI TERBATAS) ===
+Total topologi    : 100 (range: 1–100)
+Total sampel baris: 800
+Total label       : 10 (per sampel)
+
+== Per Label ==
+Label                  | TP  FP  FN  TN  | Prec   Rec    F1     Acc    | Pos  Neg  All
+------------------------------------------------------------------------------------------------
+HelloMismatch          |   18    0    0  782 | 1.0000 1.0000 1.0000 1.0000 |   18  782  800
+DeadMismatch           |   15    0    0  785 | 1.0000 1.0000 1.0000 1.0000 |   15  785  800
+NetworkTypeMismatch    |   11    0    0  789 | 1.0000 1.0000 1.0000 1.0000 |   11  789  800
+AreaMismatch           |   12    0    0  788 | 1.0000 1.0000 1.0000 1.0000 |   12  788  800
+AuthMismatch           |   14    0    0  786 | 1.0000 1.0000 1.0000 1.0000 |   14  786  800
+AuthKeyMismatch        |   11    0    0  789 | 1.0000 1.0000 1.0000 1.0000 |   11  789  800
+MTUMismatch            |   11    0    0  789 | 1.0000 1.0000 1.0000 1.0000 |   11  789  800
+PassiveMismatch        |   15    0    0  785 | 1.0000 1.0000 1.0000 1.0000 |   15  785  800
+RedistributeMismatch   |   30    0    0  770 | 1.0000 1.0000 1.0000 1.0000 |   30  770  800
+RouterIDMismatch       |   55    0    0  745 | 1.0000 1.0000 1.0000 1.0000 |   55  745  800
+
+== Rata-rata (Macro) ==
+Macro Precision       : 1.0
+Macro Recall          : 1.0
+Macro F1-Score        : 1.0
+Macro Accuracy        : 1.0
+
+== Metrik Mikro (Global) ==
+Micro Precision       : 1.0
+Micro Recall          : 1.0
+Micro F1-Score        : 1.0
+Micro Accuracy Jaccard: 1.0
+Micro Accuracy Std    : 1.0
+Hamming Accuracy      : 1.0
+
+== TP/FP/FN/TN & Subset Accuracy ==
+Total TP/FP/FN/TN     : 192/0/0/7808
+Subset Accuracy (Exact Match, mean per-sample) : 1.0
+Total Samples Evaluated                       : 800

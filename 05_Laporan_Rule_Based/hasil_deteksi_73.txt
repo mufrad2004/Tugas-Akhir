@@ -1,0 +1,30 @@
+=== Mismatch antara R1 dan R2 ===
+=========================================================
+- Hello Interval Mismatch :
+	* R1 Fa0/1 : 30
+	* R2 Fa0/1 : 10
+=========================================================
++ Solusi :
+	* Samakan nilai Hello Interval pada R1 dan R2
+=========================================================
+
+=== Mismatch antara R2 dan R3 ===
+=========================================================
+- ospf auth Mismatch :
+	* R2 Fa1/0 : message-digest
+	* R3 Fa1/0 : simple
+=========================================================
++ Solusi :
+	* Samakan nilai ospf auth pada R2 dan R3
+=========================================================
+
+=== Mismatch pada R9 ===
+=========================================================
+- Redistribute Mismatch :
+	* Belum melakukan redistribute
+	atau
+	* Command "redistribute" kurang kata kunci "subnets"
+=========================================================
++ Solusi :
+	* Tambahkan command "redistribute eigrp <as number> subnets"
+=========================================================

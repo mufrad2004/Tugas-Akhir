@@ -1,0 +1,20 @@
+=== Mismatch antara R4 dan R5 ===
+=========================================================
+- Area Mismatch :
+	* R4 Fa2/0 : 0
+	* R5 Fa0/1 : 10
+=========================================================
++ Solusi :
+	* Samakan nilai Area pada R4 dan R5
+=========================================================
+
+=== Mismatch pada R2 ===
+=========================================================
+- Redistribute Mismatch :
+	* Belum melakukan redistribute
+	atau
+	* Command "redistribute" kurang kata kunci "subnets"
+=========================================================
++ Solusi :
+	* Tambahkan command "redistribute eigrp <as number> subnets"
+=========================================================

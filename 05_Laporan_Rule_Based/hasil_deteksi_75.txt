@@ -1,0 +1,19 @@
+=== Mismatch antara R1 dan R9 ===
+=========================================================
+- Dead Interval Mismatch :
+	* R1 Fa2/0 : 40
+	* R9 Fa0/1 : 30
+=========================================================
++ Solusi :
+	* Samakan nilai Dead Interval pada R1 dan R9
+=========================================================
+
+=== Mismatch antara R2 dan R3 ===
+=========================================================
+- Network Type Mismatch :
+	* R2 Fa1/0 : Broadcast
+	* R3 Fa1/0 : Point_to_point
+=========================================================
++ Solusi :
+	* Samakan nilai Network Type pada R2 dan R3
+=========================================================

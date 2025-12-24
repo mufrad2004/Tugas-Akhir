@@ -1,0 +1,22 @@
+interface Loopback0
+ ip address 12.12.12.12 255.255.255.255
+interface FastEthernet0/0
+ ip address 100.100.100.12 255.255.255.0
+ duplex auto
+ speed auto
+ no cdp enable
+interface FastEthernet0/1
+ ip address 192.168.1.42 255.255.255.252
+ duplex auto
+ speed auto
+interface FastEthernet1/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+interface FastEthernet2/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+R12#

@@ -1,0 +1,29 @@
+=== Mismatch pada R5 ===
+=========================================================
+- Redistribute Mismatch :
+	* Belum melakukan redistribute
+	atau
+	* Command "redistribute" kurang kata kunci "subnets"
+=========================================================
++ Solusi :
+	* Tambahkan command "redistribute eigrp <as number> subnets"
+=========================================================
+
+=== Mismatch antara R2 dan R3 ===
+=========================================================
+- Router ID Mismatch :
+	* R2 : 3.3.3.3
+	* R3 : 3.3.3.3
+=========================================================
++ Solusi :
+	* Router ID pada OSPF :
+		- R1 : 1.1.1.1
+		- R2 : 3.3.3.3 <-
+		- R3 : 3.3.3.3 <-
+		- R4 : 4.4.4.4
+		- R5 : 5.5.5.5
+		- R7 : 7.7.7.7
+		- R9 : 9.9.9.9
+
+	* Lakukan perubahan Router ID agar setiap router memiliki ID yang unik.
+=========================================================

@@ -1,0 +1,7 @@
+router ospf 1
+ router-id 7.7.7.7
+ log-adjacency-changes
+ redistribute eigrp 1
+ network 7.7.7.7 0.0.0.0 area 10
+ network 192.168.1.30 0.0.0.0 area 10
+R7#

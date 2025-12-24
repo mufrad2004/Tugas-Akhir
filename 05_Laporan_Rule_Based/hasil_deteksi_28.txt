@@ -1,0 +1,20 @@
+=== Mismatch antara R3 dan R4 ===
+=========================================================
+- Passive Interface Mismatch :
+	* R3 Fa1/1 : True
+	* R4 Fa1/0 : False
+=========================================================
++ Solusi :
+	* Matikan passive-interface pada interface Fa1/1 di R3.
+=========================================================
+
+=== Mismatch pada R3 ===
+=========================================================
+- Redistribute Mismatch :
+	* Belum melakukan redistribute
+	atau
+	* Command "redistribute" kurang kata kunci "subnets"
+=========================================================
++ Solusi :
+	* Tambahkan command "redistribute eigrp <as number> subnets"
+=========================================================

@@ -1,0 +1,23 @@
+FastEthernet0/1 is up, line protocol is up 
+  Internet Address 192.168.1.30/30, Area 10 
+  Process ID 1, Router ID 7.7.7.7, Network Type POINT_TO_POINT, Cost: 10
+  Transmit Delay is 1 sec, State POINT_TO_POINT
+  Timer intervals configured, Hello 10, Dead 40, Wait 40, Retransmit 5
+    oob-resync timeout 40
+    Hello due in 00:00:06
+  Supports Link-local Signaling (LLS)
+  Cisco NSF helper support enabled
+  IETF NSF helper support enabled
+  Index 2/2, flood queue length 0
+  Next 0x0(0)/0x0(0)
+  Last flood scan length is 1, maximum is 2
+  Last flood scan time is 0 msec, maximum is 0 msec
+  Neighbor Count is 1, Adjacent neighbor count is 1 
+    Adjacent with neighbor 5.5.5.5
+  Suppress hello for 0 neighbor(s)
+  Simple password authentication enabled
+Loopback0 is up, line protocol is up 
+  Internet Address 7.7.7.7/32, Area 10 
+  Process ID 1, Router ID 7.7.7.7, Network Type LOOPBACK, Cost: 1
+  Loopback interface is treated as a stub Host
+R7#

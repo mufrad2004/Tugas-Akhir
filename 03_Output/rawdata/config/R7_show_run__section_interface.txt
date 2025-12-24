@@ -1,0 +1,24 @@
+interface Loopback0
+ ip address 7.7.7.7 255.255.255.255
+interface FastEthernet0/0
+ ip address 100.100.100.7 255.255.255.0
+ duplex auto
+ speed auto
+ no cdp enable
+interface FastEthernet0/1
+ ip address 192.168.1.30 255.255.255.252
+ ip ospf authentication
+ ip ospf authentication-key cisco123
+ ip ospf network point-to-point
+ duplex auto
+ speed auto
+interface FastEthernet1/0
+ ip address 192.168.1.49 255.255.255.252
+ duplex auto
+ speed auto
+interface FastEthernet2/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+R7#

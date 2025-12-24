@@ -1,0 +1,19 @@
+=== Mismatch antara R1 dan R2 ===
+=========================================================
+- ospf auth Mismatch :
+	* R1 Fa0/1 : simple
+	* R2 Fa0/1 : message-digest
+=========================================================
++ Solusi :
+	* Samakan nilai ospf auth pada R1 dan R2
+=========================================================
+
+=== Mismatch antara R2 dan R4 ===
+=========================================================
+- Passive Interface Mismatch :
+	* R2 Fa1/1 : False
+	* R4 Fa0/1 : True
+=========================================================
++ Solusi :
+	* Matikan passive-interface pada interface Fa0/1 di R4.
+=========================================================

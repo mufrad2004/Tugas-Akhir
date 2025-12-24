@@ -1,0 +1,8 @@
+router ospf 1
+ router-id 5.5.5.5
+ log-adjacency-changes
+ redistribute eigrp 1 subnets
+ network 5.5.5.5 0.0.0.0 area 0
+ network 192.168.1.22 0.0.0.0 area 0
+ network 192.168.1.29 0.0.0.0 area 10
+R5#

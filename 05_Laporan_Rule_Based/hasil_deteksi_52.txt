@@ -1,0 +1,19 @@
+=== Mismatch antara R1 dan R2 ===
+=========================================================
+- Hello Interval Mismatch :
+	* R1 Fa0/1 : 5
+	* R2 Fa0/1 : 10
+=========================================================
++ Solusi :
+	* Samakan nilai Hello Interval pada R1 dan R2
+=========================================================
+
+=== Mismatch antara R4 dan R5 ===
+=========================================================
+- Passive Interface Mismatch :
+	* R4 Fa2/0 : True
+	* R5 Fa0/1 : False
+=========================================================
++ Solusi :
+	* Matikan passive-interface pada interface Fa2/0 di R4.
+=========================================================

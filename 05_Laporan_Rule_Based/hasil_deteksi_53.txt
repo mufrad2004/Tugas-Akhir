@@ -1,0 +1,28 @@
+=== Mismatch antara R2 dan R4 ===
+=========================================================
+- Network Type Mismatch :
+	* R2 Fa1/1 : Broadcast
+	* R4 Fa0/1 : Point_to_point
+=========================================================
++ Solusi :
+	* Samakan nilai Network Type pada R2 dan R4
+=========================================================
+
+=== Mismatch antara R1 dan R3 ===
+=========================================================
+- Router ID Mismatch :
+	* R1 : 3.3.3.3
+	* R3 : 3.3.3.3
+=========================================================
++ Solusi :
+	* Router ID pada OSPF :
+		- R1 : 3.3.3.3 <-
+		- R2 : 2.2.2.2
+		- R3 : 3.3.3.3 <-
+		- R4 : 4.4.4.4
+		- R5 : 5.5.5.5
+		- R7 : 7.7.7.7
+		- R9 : 9.9.9.9
+
+	* Lakukan perubahan Router ID agar setiap router memiliki ID yang unik.
+=========================================================

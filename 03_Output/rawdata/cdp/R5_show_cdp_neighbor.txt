@@ -1,0 +1,8 @@
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater
+
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+R4.cisco         Fas 0/1            151         R S I     3725      Fas 2/0
+R7.cisco         Fas 2/0            154         R S I     3725      Fas 0/1
+R6.cisco         Fas 1/0            154         R S I     3725      Fas 0/1
+R5#

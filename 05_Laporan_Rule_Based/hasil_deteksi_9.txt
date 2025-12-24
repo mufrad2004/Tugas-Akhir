@@ -1,0 +1,9 @@
+=== Mismatch antara R1 dan R3 ===
+=========================================================
+- Passive Interface Mismatch :
+	* R1 Fa1/0 : False
+	* R3 Fa0/1 : True
+=========================================================
++ Solusi :
+	* Matikan passive-interface pada interface Fa0/1 di R3.
+=========================================================

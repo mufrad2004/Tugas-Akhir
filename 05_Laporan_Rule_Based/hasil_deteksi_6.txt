@@ -1,0 +1,9 @@
+=== Mismatch antara R5 dan R7 ===
+=========================================================
+- ospf auth Mismatch :
+	* R5 Fa2/0 : message-digest
+	* R7 Fa0/1 : simple
+=========================================================
++ Solusi :
+	* Samakan nilai ospf auth pada R5 dan R7
+=========================================================

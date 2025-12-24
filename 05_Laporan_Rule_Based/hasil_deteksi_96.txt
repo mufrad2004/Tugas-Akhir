@@ -1,0 +1,19 @@
+=== Mismatch antara R1 dan R3 ===
+=========================================================
+- Network Type Mismatch :
+	* R1 Fa1/0 : Broadcast
+	* R3 Fa0/1 : Point_to_point
+=========================================================
++ Solusi :
+	* Samakan nilai Network Type pada R1 dan R3
+=========================================================
+
+=== Mismatch antara R5 dan R7 ===
+=========================================================
+- Passive Interface Mismatch :
+	* R5 Fa2/0 : False
+	* R7 Fa0/1 : True
+=========================================================
++ Solusi :
+	* Matikan passive-interface pada interface Fa0/1 di R7.
+=========================================================

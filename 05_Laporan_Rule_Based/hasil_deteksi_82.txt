@@ -1,0 +1,19 @@
+=== Mismatch antara R2 dan R3 ===
+=========================================================
+- Hello Interval Mismatch :
+	* R2 Fa1/0 : 10
+	* R3 Fa1/0 : 15
+=========================================================
++ Solusi :
+	* Samakan nilai Hello Interval pada R2 dan R3
+=========================================================
+
+=== Mismatch antara R4 dan R5 ===
+=========================================================
+- Network Type Mismatch :
+	* R4 Fa2/0 : Broadcast
+	* R5 Fa0/1 : Point_to_point
+=========================================================
++ Solusi :
+	* Samakan nilai Network Type pada R4 dan R5
+=========================================================

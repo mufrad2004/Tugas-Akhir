@@ -1,0 +1,24 @@
+Routing Protocol is "ospf 1"
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Router ID 1.1.1.1
+  It is an area border router
+  Number of areas in this router is 2. 2 normal 0 stub 0 nssa
+  Maximum path: 4
+  Routing for Networks:
+    1.1.1.1 0.0.0.0 area 0
+    192.168.1.1 0.0.0.0 area 0
+    192.168.1.5 0.0.0.0 area 0
+    192.168.1.33 0.0.0.0 area 20
+ Reference bandwidth unit is 100 mbps
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+    7.7.7.7              110      00:01:14
+    9.9.9.9              110      01:29:12
+    2.2.2.2              110      00:01:14
+    3.3.3.3              110      01:29:11
+    4.4.4.4              110      01:29:22
+    5.5.5.5              110      00:01:14
+  Distance: (default is 110)
+
+R1#

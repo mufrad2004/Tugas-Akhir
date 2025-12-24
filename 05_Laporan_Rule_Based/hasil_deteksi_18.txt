@@ -1,0 +1,33 @@
+=== Mismatch antara R1 dan R9 ===
+=========================================================
+- MTU Mismatch :
+	* R1 Fa2/0 : 1500
+	* R9 Fa0/1 : 66
+=========================================================
++ Solusi :
+	* Samakan nilai MTU pada R1 dan R9
+=========================================================
+
+=== Mismatch antara R2 dan R3 ===
+=========================================================
+- ospf auth Mismatch :
+	* R2 Fa1/0 : message-digest
+	* R3 Fa1/0 : simple
+=========================================================
++ Solusi :
+	* Samakan nilai ospf auth pada R2 dan R3
+=========================================================
+
+=== Mismatch antara R2 dan R3 ===
+=========================================================
+- auth_key Mismatch :
+	* R2 Fa1/0 :
+		* 1 : cisco123
+		* 2 : cisco321
+	* R3 Fa1/0 :
+		* simple : cisco123
+=========================================================
++ Solusi :
+	* R2 dan R3 memiliki jenis Authentication yang berbeda
+	* Samakan jenis Authentication dan Authentication Key
+=========================================================
